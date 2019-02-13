@@ -3,13 +3,14 @@ var i = j = 0;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-	collection = new Collection(windowWidth);
+	collection = new Collection(100);
 }
 
 function draw() {
 
 	background(255);
-	collection.render();
+	fill(0);
+	collection.betaRender();
 
 	// swap if needed
 	let current = collection.items[j].value;

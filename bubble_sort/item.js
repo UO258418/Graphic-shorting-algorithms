@@ -17,4 +17,9 @@ class Item {
             position, windowHeight - this.value);
     }
 
+    betaRender(position, width) {
+        rect(position * width, windowHeight - this.value,
+            width, this.value);
+    }
+
 }

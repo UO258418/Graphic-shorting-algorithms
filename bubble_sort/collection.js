@@ -36,6 +36,12 @@ class Collection {
         }
     }
 
+    betaRender() {
+        for(let i = 0; i < this.size; i++) {
+            this.items[i].betaRender(i, windowWidth/this.size);
+        }
+    }
+
 }
 
 const getRandomValue = () => {
